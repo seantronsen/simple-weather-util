@@ -6,7 +6,7 @@ const app = express()
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
-const errMessage = (message) => {
+const errMsg = (message) => {
     console.log(chalk.red(message))
 }
 
