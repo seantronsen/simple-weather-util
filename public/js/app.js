@@ -4,7 +4,7 @@ const first = document.getElementById('first')
 const second = document.getElementById('second')
 
 var searchWeather =  (weatherString) => {
-    fetch('http://localhost:3000/weather?address=' + encodeURI(weatherString)).then((response) => {
+    fetch('/weather?address=' + encodeURI(weatherString)).then((response) => {
         response.json().then((data)=> {
             if (data.err) {
                 first.textContent = data.err
